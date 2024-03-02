@@ -44,11 +44,6 @@
             gap: 24px;
         }
 
-        .input_container {
-            position: relative;
-            margin-bottom: 12px;
-        }
-
         .textInput {
             font-size: 15px;
             font-weight: 400;
@@ -68,9 +63,15 @@
 
         section {
             display: grid;
-            grid-template-rows: 200px 1fr 30px;
-            margin: 5px;
-            padding: 5px;
+            grid-template-columns: auto 400px auto;
+            grid-template-rows: 200px 400px auto;
+        }
+
+        .login-container {
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 3;
         }
     </style>
 
@@ -82,11 +83,9 @@
 
     <section>
 
-        <div></div>
-
-        <div class="container  password" role="presentation">
-            <div class="container-content">
-                <div class="input_container">
+        <div class="login-container">
+            <div class="container  password" role="presentation">
+                <div class="container-content">
                     <div id="api" role="main"></div>
                     <div>
                         <strong>
