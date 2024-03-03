@@ -29,9 +29,11 @@
             box-sizing: border-box;
         }
 
+        /*
         .password.container-content {
             width: unset;
         }
+        *
 
         /* changes signInName Field li */
         .TextBox.signInName_li {
@@ -110,7 +112,15 @@
             text-align: center;
             width: 100%;
             box-sizing: border-box;
-            content: "Login";
+            margin: 15px 0;
+        }
+
+        #contine::after {
+            visibility: visible;
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: "Change Password Login";
         }
 
         .heading h1 {
@@ -132,10 +142,6 @@
 
         li {
             list-style-type: none;
-        }
-
-        .buttons {
-            margin: 15px 0;
         }
     </style>
 
