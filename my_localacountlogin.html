@@ -114,9 +114,16 @@
         }
 
         h1.heading {
-            text-indent: 0;
-            content: "Login to change your password";
-            float: left;
+            visibility: hidden;
+            position: relative;
+        }
+
+        h1.heading:after {
+            visibility: visible;
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: "This text replaces the original.";
         }
     </style>
 
