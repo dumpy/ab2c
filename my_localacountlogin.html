@@ -100,19 +100,6 @@
         }
 
         #continue {
-            visibility: hidden;
-            position: relative;
-        }
-
-        #continue:after {
-            visibility: visible;
-            position: absolute;
-            top: 0;
-            left: 0;
-            content: "Change Password Login";
-        }
-
-        #continue {
             background-color: #004685;
             padding: 12px 16px;
             color: #fff;
@@ -125,6 +112,18 @@
             width: 100%;
             box-sizing: border-box;
             margin: 15px 0;
+        }
+
+        #continue {
+            visibility: hidden;
+            position: relative;
+        }
+
+        #continue:after {
+            visibility: visible;
+            position: absolute;
+
+            content: "Change Password Login";
         }
 
         .heading h1 {
