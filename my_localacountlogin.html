@@ -10,13 +10,6 @@
         rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <script type="text/javascript">
-        function load() {
-            alert("Page is loaded");
-            document.getElementById("continue").innerHTML = "New text!";
-        }
-    </script>
-
     <style>
         body {
             background-image: url("https://raw.githubusercontent.com/dumpy/ab2c/main/PacificNational.png");
@@ -163,30 +156,35 @@
 </head>
 
 
-<body onload="load()"">
+<body>
 
     <section>
 
         <div class=" login-container">
-    <div class="container  password" role="presentation">
-        <div class="container-content">
-            <div>
-                <div id="api" role="main"></div>
-                <strong>
-                    <p>Change Password Process:</p>
-                </strong>
-                <ul id="changeprocess">
-                    <li>Login and proceed to change password</li>
-                    <li></li>
-                </ul>
-            </div>
+            <div class="container  password" role="presentation">
+                <div class="container-content">
+                    <div>
+                        <div id="api" role="main"></div>
+                        <strong>
+                            <p>Change Password Process:</p>
+                        </strong>
+                        <ul id="changeprocess">
+                            <li>Login and proceed to change password</li>
+                            <li></li>
+                        </ul>
+                    </div>
 
+                </div>
+            </div>
         </div>
-    </div>
-    </div>
 
     </section>
-
+    <script>
+        window.onload = function () {
+            alert("Page is loaded");
+            document.getElementById("continue").innerHTML = "New text!";
+        };
+    </script>
 
 
 </body>
