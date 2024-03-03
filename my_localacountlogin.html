@@ -9,9 +9,10 @@
         href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@1,200&family=Inter:wght@100..900&family=Noto+Sans:wght@700&family=Poppins:ital,wght@0,300;1,100&display=swap"
         rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <script type="text/javascript">
-        window.onload = function () {
-            console.log('The page has fully loaded');
+        function load() {
+            alert("Page is loaded");
         }
     </script>
 
@@ -161,27 +162,27 @@
 </head>
 
 
-<body>
+<body onload="load()>
 
     <section>
 
-        <div class="login-container">
-            <div class="container  password" role="presentation">
-                <div class="container-content">
-                    <div>
-                        <div id="api" role="main"></div>
-                        <strong>
-                            <p>Change Password Process:</p>
-                        </strong>
-                        <ul id="changeprocess">
-                            <li>Login and proceed to change password</li>
-                            <li></li>
-                        </ul>
-                    </div>
-
-                </div>
+        <div class=" login-container">
+    <div class="container  password" role="presentation">
+        <div class="container-content">
+            <div>
+                <div id="api" role="main"></div>
+                <strong>
+                    <p>Change Password Process:</p>
+                </strong>
+                <ul id="changeprocess">
+                    <li>Login and proceed to change password</li>
+                    <li></li>
+                </ul>
             </div>
+
         </div>
+    </div>
+    </div>
 
     </section>
 
