@@ -13,6 +13,8 @@
     <script>
         function myFunction() {
             console.log('test');
+            const processtext = document.getElementById("processtext");
+            processtext.innerHTML += "<li>Login and proceed to change password</li><li></li>";
         }
     </script>
 
@@ -185,18 +187,17 @@
                             <p>Change Password Process:</p>
                         </strong>
                         <ul id="processtext">
-                            <li>Login and proceed to change password</li>
-                            <li></li>
-                            <script>
-                                "use strict";
-                                myFunction();
-                            </script>
+
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <script>
+        "use strict";
+        myFunction();
+    </script>
 </body>
 
 </html>
