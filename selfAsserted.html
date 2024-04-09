@@ -10,6 +10,12 @@
         rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <script>
+        function myFunction() {
+            console.log('test');
+        }
+    </script>
+
     <style>
         body {
             background-image: url("https://pnazaeb2ctemplatespoc.z8.web.core.windows.net/src/backgrounds/4-2.png");
@@ -128,7 +134,7 @@
             list-style-type: none;
         }
 
-        #changeprocess {
+        #processtext {
             position: relative;
             left: -40px;
         }
@@ -178,9 +184,13 @@
                         <strong>
                             <p>Change Password Process:</p>
                         </strong>
-                        <ul id="changeprocess">
+                        <ul id="processtext">
                             <li>Login and proceed to change password</li>
                             <li></li>
+                            <script>
+                                "use strict";
+                                myFunction();
+                            </script>
                         </ul>
                     </div>
                 </div>
