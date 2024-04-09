@@ -1,0 +1,450 @@
+body {
+    background-image: url("https://raw.githubusercontent.com/dumpy/ab2c/main/PacificNational.png");
+    box-sizing: border-box;
+    font-size: 15px;
+    margin: 0;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    font-family: "Inter", sans-serif;
+    box-sizing: border-box;
+  }
+  
+  .login_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+  }
+  
+  .container-content {
+    background-color: white;
+    padding: 50px 56px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 448px;
+    gap: 24px;
+  }
+  
+  p {
+    text-align: left;
+    font-size: 14px;
+    color: #3a3a49;
+    margin: 0;
+  }
+  
+  h1 {
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #3a3a49;
+    margin: 0;
+    text-align: left;
+    align-self: start;
+  }
+  
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  a {
+    color: #276acb;
+  }
+  
+  .cta {
+    background-color: #004685;
+    padding: 12px 16px;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 15px;
+    line-height: 19px;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .bottom-link {
+    align-self: center;
+  }
+  
+  span {
+    color: #d6d6d6;
+    font-size: 14px;
+  }
+  
+  .input_container {
+    position: relative;
+    margin-bottom: 12px;
+  }
+  
+  label {
+    color: #3a3a49;
+    font-size: 15px;
+    font-weight: 400;
+  }
+  
+  .input_container label {
+    background-color: #fff;
+    pointer-events: none;
+    left: 15px;
+    top: 15px;
+    transition: 0.2s ease all;
+    position: absolute;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+  }
+  
+  input {
+    font-size: 15px;
+    font-weight: 400;
+    color: #3a3a49;
+    border-radius: 4px;
+    border: 1px solid #737373;
+    box-sizing: border-box;
+  }
+  
+  .input_container input {
+    display: block;
+    width: 100%;
+  }
+  
+  .input_container input:not([type="checkbox"]) {
+    height: 48px;
+    padding: 15px 16px;
+  }
+  
+  input:not([type="checkbox"]):focus {
+    outline: none;
+    border: 2px solid #3053ba;
+    background-color: #f5f8fd;
+  }
+  
+  input:not([type="checkbox"]):focus + label,
+  input:not([type="checkbox"]):not(:placeholder-shown) ~ label {
+    top: -8px;
+    font-size: 12px;
+    padding: 0 4px;
+  }
+  input:not([type="checkbox"]):focus + label {
+    color: #3053ba;
+  }
+  
+  .input_container input.input-error {
+    border: 1px solid #c22b3f;
+  }
+  
+  input[type="checkbox"] {
+    accent-color: #004685;
+    border: solid 2px #ababab;
+  }
+  
+  input.input-error:not([type="checkbox"]):focus + label {
+    color: #c22b3f;
+  }
+  
+  input:not([type="checkbox"]):not(:placeholder-shown).input-error ~ label {
+    color: #c22b3f;
+  }
+  
+  .input_container input.input-success {
+    border: 1px solid #198050;
+    background: url("check.svg") no-repeat;
+    background-position: right 7px bottom 50%;
+  }
+  
+  input.input-success:not([type="checkbox"]):focus + label {
+    color: #198050;
+  }
+  
+  input:not([type="checkbox"]):not(:placeholder-shown).input-success ~ label {
+    color: #198050;
+  }
+  
+  .error-helper {
+    color: #c22b3f;
+    margin: 3px 14px 0;
+  }
+  
+  .error {
+    background-color: #f7ebed;
+    border-left: 3px solid #c22b3f;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px 12px;
+    gap: 12px;
+  }
+  
+  .error span {
+    color: #c22b3f;
+    font-size: 12px;
+    text-align: left;
+    flex: 1;
+  }
+  
+  .error svg {
+    height: 16px;
+    width: 16px;
+  }
+  .icon-header {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    width: 100%;
+  }
+  
+  .icon-header h1{
+    align-self: center;
+  }
+  .icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .icon.icon-success {
+    background-color: #ebf7f2;
+  }
+  
+  .icon.icon-error {
+    background-color: #f7ebed;
+  }
+  
+  .forgotPassword-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    margin-top: 12px;
+  }
+  
+  strong {
+    font-weight: 600;
+  }
+  
+  ul {
+    text-align: left;
+    padding-left: 24px;
+    color: #515151;
+    margin-bottom: 0;
+  }
+  
+  .rights {
+    margin-bottom: 40px;
+  }
+  
+  form {
+    margin-bottom: 8px;
+  }
+  
+  .navbar input[type="checkbox"],
+  .navbar .hamburger-lines {
+    display: none;
+  }
+  
+  .navbar {
+    width: 100%;
+    background: #FAFCFF;
+    color: #000;
+    z-index: 12;
+    padding: 24px;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: flex-start;
+    height: 100%;
+    align-items: center;
+    flex-direction: row;
+  }
+  
+  .menu-items {
+    order: 2;
+    display: flex;
+    gap: 24px;
+    margin-top: 0;
+  }
+  
+  .menu-items li {
+    list-style: none;
+    font-size: 1.2rem;
+  }
+  
+  .menu-items a {
+    text-decoration: none;
+    color: #3A3A49;
+    font-weight: 600;
+    transition: color 0.3s ease-in-out;
+    font-size: 14px;
+  }
+  
+  .menu-items a:hover {
+    color: #117964;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .logo {
+    order: 1;
+  padding: 0;
+  margin-left: 24px;
+  height: 24px;
+  }
+  
+  @media (max-width: 576px) {
+    body {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    .container-content {
+      padding: 50px 18px;
+    }
+    .login_container {
+      width: 100%;
+    }
+    h1 {
+      font-size: 21px;
+    }
+  
+    .password .container-content {
+      width: unset;
+    }
+  
+    .rights {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+  
+    /* Nav Styles */
+    .navbar {
+      padding: 24px 20px;
+      background-color: #fff;
+    }
+  
+    .navbar-container input[type="checkbox"],
+    .navbar-container .hamburger-lines {
+      display: block;
+    }
+  
+    .navbar-container {
+      display: block;
+      position: relative;
+      height: 24px;
+    }
+  
+    .navbar-container input[type="checkbox"] {
+      position: absolute;
+      display: block;
+      height: 14px;
+      width: 14px;
+      left: 4px;
+      z-index: 5;
+      opacity: 0;
+    }
+  
+    .navbar-container .hamburger-lines {
+      display: block;
+      height: 18px;
+      width: 18px;
+      position: absolute;
+      left: 4px;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  
+    .navbar-container .hamburger-lines .line {
+      display: block;
+      height: 2px;
+      width: 23px;
+      border-radius: 10px;
+      background: #9AA2AC;
+      ;
+    }
+  
+    .navbar-container .hamburger-lines .line1 {
+      transform-origin: 0% 0%;
+      transition: transform 0.4s ease-in-out;
+    }
+  
+    .navbar-container .hamburger-lines .line2 {
+      transition: transform 0.2s ease-in-out;
+    }
+  
+    .navbar-container .hamburger-lines .line3 {
+      transform-origin: 0% 100%;
+      transition: transform 0.4s ease-in-out;
+    }
+  
+    .navbar .menu-items {
+      padding-top: 100px;
+      background: #fff;
+      height: 100vh;
+      max-width: 300px;
+      transform: translate(-150%, -24px);
+      display: flex;
+      flex-direction: column;
+      margin-left: -40px;
+      padding-left: 50px;
+      transition: transform 0.5s ease-in-out;
+      gap: 16px;
+      background-color: #FAFCFF;
+  
+    }
+  
+    .menu-items li {
+      padding: 12px 16px;
+      text-align: left;
+      width: 227px;
+      border-radius: 8px;
+      line-height: 18px;
+    }
+  
+    .menu-items li:hover, .menu-items li:focus, .menu-items li:active {
+      background-color: #EAF1FC;
+    }
+  
+    .menu-items li:hover a, .menu-items li:focus a, .menu-items li:active a {
+      color: #004685;
+    }
+  
+    .logo {
+      position: absolute;
+      top: 0;
+      left: 40px;
+      margin-left: 0;
+    }
+  
+    .navbar-container input[type="checkbox"]:checked ~ .menu-items {
+      transform: translate(0, -24px);
+    }
+  
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+      transform: rotate(45deg);
+    }
+  
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+      transform: scaleY(0);
+    }
+  
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+      transform: rotate(-45deg);
+    }
+  }
