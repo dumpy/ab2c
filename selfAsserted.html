@@ -13,9 +13,11 @@
     <script>
         function changeProcessText() {
             //console.log('See if this script gets hit');
-            //const answer = x > 10 ? "greater than 10" : "less than 10";
 
-            const answer = document.getElementById("signInName") ? "123" : "456"
+            const loginmessage = "<li>Login and proceed to change password</li><li></li>";
+            const changepasswordmessage = "<li>Minimum of 10 characters</li><li>At least one uppercase letter</li><li>At least one special character</li></li>";
+
+            const answer = document.getElementById("signInName") ? loginmessage : changepasswordmessage
             console.log(answer);
 
             /*
@@ -25,7 +27,8 @@
             */
 
             const processtext = document.getElementById("processtext");
-            processtext.innerHTML += "<li>Login and proceed to change password</li><li></li>";
+            processtext.innerHTML += ""
+            //processtext.innerHTML += "<li>Login and proceed to change password</li><li></li>";
         }
     </script>
 
