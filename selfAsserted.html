@@ -12,23 +12,14 @@
 
     <script>
         function changeProcessText() {
-            //console.log('See if this script gets hit');
+            const loginMessage = "<li>Login and proceed to change password</li><li></li>";
+            const changePasswordMessage = "<li>Minimum of 10 characters</li><li>At least one uppercase letter</li><li>At least one special character</li></li>";
 
-            const loginmessage = "<li>Login and proceed to change password</li><li></li>";
-            const changepasswordmessage = "<li>Minimum of 10 characters</li><li>At least one uppercase letter</li><li>At least one special character</li></li>";
+            const outputMessage = document.getElementById("signInName") ? loginMessage : changePasswordMessage;
+            console.log(outputMessage);
 
-            const outputmessage = document.getElementById("signInName") ? loginmessage : changepasswordmessage
-            console.log(outputmessage);
-
-            /*
-                        if (document.getElementById("signInName")) {
-                            const processtext = document.getElementById("processtext");
-                        }
-            */
-
-            const processtext = document.getElementById("processtext");
-            processtext.innerHTML += outputmessage
-            //processtext.innerHTML += "<li>Login and proceed to change password</li><li></li>";
+            const processText = document.getElementById("processtext");
+            processText.insertAdjacentHTML('beforeend', outputMessage);
         }
     </script>
 
